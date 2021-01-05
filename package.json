@@ -1,0 +1,37 @@
+{
+  "name": "address_book",
+  "version": "1.0.0",
+  "description": "Backend for Address book",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node dist/app",
+    "dev": "nodemon --exec babel-node src/app.js",
+    "build": "babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeyFaith/address_book.git"
+  },
+  "author": "Bey Faith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeyFaith/address_book/issues"
+  },
+  "homepage": "https://github.com/BeyFaith/address_book#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "pg": "^8.5.1",
+    "sequelize": "^5.21.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11"
+  }
+}
