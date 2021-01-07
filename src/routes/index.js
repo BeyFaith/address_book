@@ -10,8 +10,6 @@ contactRouter
   .get("/contacts", contactController.getAllContacts)
   .delete("/contacts/:id", contactController.deleteContact)
   .put("/contacts/:id", contactValidation, contactController.editContact)
-  .get('/', (req, res) => {
-    res.status(200).send({message: 'welcome to my api :)'})
-  })
+  
 
 export default contactRouter;

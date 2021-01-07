@@ -50,9 +50,9 @@ class contactController {
   }
 
   static async editContact(req, res) {
-    const { contact } = req.body;
+    // const { contact } = req.body;
     const { id } = req.params;
-    await Contact.update({ contact }, { where: { id } });
+    await Contact.update({ ...req.body }, { where: { id } });
 
     res.status(200).json({
       message: "Successfully updated a contact",
