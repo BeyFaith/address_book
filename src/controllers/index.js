@@ -1,4 +1,4 @@
-import { Contact } from "../models";
+import { Contact } from "../database/models";
 
 class contactController {
   static async createContact(req, res) {
